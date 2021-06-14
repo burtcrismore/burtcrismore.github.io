@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Sigmar+One&display=swap" rel="stylesheet" />
+		<script defer src="https://kit.fontawesome.com/bff7f91377.js"></script>
+		<script defer src="script.js"></script>
+		<title>Rock - Paper - Scissors</title>
+	</head>
+	<body>
+		<header class="banner banner__header"></header>
+		<main class="main__content container">
+			<div class="title">
+				<h1 class="title__headline">Rock, Paper, Scissors</h1>
+			</div>
+			<div class="scoreboard">
+				<div class="scoreboard__panel">
+					<div class="scoreboard__stats scoreboard__stats--human">
+						<div class="scoreboard__avatar scoreboard__avatar--human">
+							<i class="fad fa-user-astronaut"></i>
+						</div>
+						<div class="scoreboard__meter scoreboard__meter--human">
+							<div class="scoreboard__meter-bar scoreboard__meter-bar--human"></div>
+						</div>
+						<h4 class="scoreboard__title scoreboard__title--human">Spaceboy</h4>
+					</div>
+				</div>
+
+				<div class="scoreboard__divider">
+					<h3 class="scoreboard__divider-vs">vs</h3>
+				</div>
+
+				<div class="scoreboard__panel">
+					<div class="scoreboard__stats scoreboard__stats--computer">
+						<div class="scoreboard__meter scoreboard__meter--computer">
+							<div class="scoreboard__meter-bar scoreboard__meter-bar--computer"></div>
+						</div>
+						<div class="scoreboard__avatar scoreboard__avatar--computer">
+							<i class="fad fa-user-robot"></i>
+						</div>
+						<h4 class="scoreboard__title scoreboard__title--computer">Computron</h4>
+					</div>
+				</div>
+			</div>
+			<div class="results">
+				<div class="results__panel results__panel--human">
+					<div class="results__panel--border"></div>
+					<span class="fa-stack results__panel--human-rock">
+						<i class="fas fa-hand-rock fa-stack-1x"></i>
+						<i class="fal fa-hand-rock fa-stack-1x"></i>
+					</span>
+
+					<span class="fa-stack results__panel--human-paper">
+						<i class="fas fa-hand-paper fa-stack-1x"></i>
+						<i class="fal fa-hand-paper fa-stack-1x"></i>
+					</span>
+
+					<span class="fa-stack results__panel--human-scissors">
+						<i class="fas fa-hand-scissors fa-stack-1x"></i>
+						<i class="fal fa-hand-scissors fa-stack-1x"></i>
+					</span>
+				</div>
+
+				<div class="results__divider">
+					<h2 class="results__divider-message results__divider-winner">Winner</h2>
+					<h2 class="results__divider-message results__divider-loser">Loser</h2>
+					<h2 class="results__divider-message results__divider-draw">Draw</h2>
+					<h2 class="results__divider-message results__divider-match-won">Match Won!</h2>
+					<h2 class="results__divider-message results__divider-match-lost">Match Lost!</h2>
+				</div>
+
+				<div class="results__panel results__panel--computer">
+					<div class="results__panel--border"></div>
+					<span class="fa-stack results__panel--computer-rock">
+						<i class="fas fa-hand-rock fa-stack-1x"></i>
+						<i class="fal fa-hand-rock fa-stack-1x"></i>
+					</span>
+
+					<span class="fa-stack results__panel--computer-paper">
+						<i class="fas fa-hand-paper fa-stack-1x"></i>
+						<i class="fal fa-hand-paper fa-stack-1x"></i>
+					</span>
+
+					<span class="fa-stack results__panel--computer-scissors">
+						<i class="fas fa-hand-scissors fa-stack-1x"></i>
+						<i class="fal fa-hand-scissors fa-stack-1x"></i>
+					</span>
+				</div>
+			</div>
+			<div class="message">
+				<h2 class="message__headline">Choose your hand</h2>
+			</div>
+			<div class="player-choice">
+				<div class="player-choice__container">
+					<button class="player-choice__btn" data-choice="Rock"><i class="fal fa-hand-rock fa-rotate-90"></i></button>
+					<button class="player-choice__btn" data-choice="Paper"><i class="fal fa-hand-paper fa-rotate-90"></i></button>
+					<button class="player-choice__btn" data-choice="Scissors"><i class="fal fa-hand-scissors fa-flip-horizontal"></i></button>
+					<button class="player-choice__reset">Replay</button>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<header class="banner banner__footer"></header>
+			<div class="container">
+				<div class="footer__notice">
+					<div class="footer__col">
+						<p class="footer__notice-copyright">Developed & Designed by Burt Crismore</p>
+						<p class="footer__spacer">//</p>
+						<a href="https://github.com/burtcrismore" class="footer__links footer__social-icon" target="_blank"><i class="fab fa-github-square"></i></a>
+						<a href="https://twitter.com/burtcrismore" class="footer__links footer__social-icon" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					</div>
+					<div class="footer__col">
+						<p class="footer__notice-version">Beta v1.0</p>
+						<p class="footer__spacer">//</p>
+						<p class="footer__notice-code">
+							<a href="https://github.com/burtcrismore/100-days-of-code/tree/main/rock-paper-scissor" class="footer__links footer__notice-link" target="_blank">View Source Code</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
